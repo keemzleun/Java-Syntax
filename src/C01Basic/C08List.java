@@ -36,7 +36,7 @@ public class C08List {
 //        myList.add(20);
 //        System.out.println(myList);
 //
-//        // add(index, 값) : 중간에 값 삽입
+//        // add(index, 값) : 중간에 값 삽입. 성능 저하 이슈!!!
 //        myList.add(0, 30);
 //        System.out.println(myList);
 //
@@ -75,7 +75,7 @@ public class C08List {
 //        // 가장 먼저 나오는 값의 index return
 //        System.out.println(myList.indexOf(10));
 //
-//        // 전체 삭제 : clear()
+//        // clear() : 전체 삭제
 //
 //        // isEmpty : 값이 비었는지 안 비었는지
 //
@@ -86,6 +86,11 @@ public class C08List {
 //        System.out.println(list.contains(20));  // false
 
 //        // 이중 리스트(리스트 안에 리스트)
+//        List<Integer> temp1 = new ArrayList<>();
+//        List<List<Integer>> myList = new ArrayList<>();
+//        myList.add(temp1);              // 굳이 리스트명이 필요할까?
+//        myList.add(new ArrayList<>());  // 그냥 이렇게 쓰는게...
+
 //        List<List<Integer>> myList = new ArrayList<>();
 //        // [[ ], [ ]]
 //        myList.add(new ArrayList<>());
