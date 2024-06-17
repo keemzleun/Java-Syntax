@@ -87,8 +87,5 @@ public class C10Set {
         for (int i = 0; i < numbers.length; i++) {
             set.add(numbers[i]);
         }
-
-
-
     }
 }

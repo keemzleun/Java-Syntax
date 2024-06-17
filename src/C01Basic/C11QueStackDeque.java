@@ -82,19 +82,75 @@ public class C11QueStackDeque {
 //            System.out.println(pq.poll());
 //        }
 
-        // [프로그래머스] 더 맵게
-//        int[] scov = {1, 2, 3, 9, 10, 12};
-//        int K = 7;
-//        int count = 0;
-//        Queue<Integer> que = new PriorityQueue<>();
-//        for (int i = 0; i < scov.length ; i++) {
-//            que.add(scov[i]);
+//        // [프로그래머스] 더 맵게
+        int[] scov = {1, 2, 3, 9, 10, 12};
+        int K = 7;
+        Queue<Integer> que = new PriorityQueue<>();
+        while (que.size() > 1) {
+            System.out.println(que.poll());
+            System.out.println(que.poll());
+        }
+
+        // Stack
+//        Stack<Integer> st1 = new Stack<>();
+//        st1.push(10);
+//        st1.push(20);
+//        st1.push(30);
+//        // pop : 스택에서 요소를 제거 후 해당 요소를 반환
+//        System.out.println(st1.pop());  // 10
+//        System.out.println(st1.peek()); // 20
+//        System.out.println(st1.size());
+//        System.out.println(st1.isEmpty());
+
+//        Stack<Integer> st2 = new Stack<>();
+//        for (int i=0; i<5; i++){
+//            st2.push(i);
 //        }
-//        while()
+//        while(!st2.isEmpty()){
+//            System.out.println(st2.pop());
+//        }
+
+        // [프로그래머스] 이름 머더라
+//        int[] arr = {4,4,4,3,3};
+//        int[] answer = {};
+//        Stack<Integer> st = new Stack<>();
+//        for(int i : arr){
+//            if (st.isEmpty()) st.push(i);
+//            else if (st.peek() != i) st.push(i);
+//        }
+//        answer = new int[st.size()];
+//        for (int i = answer.length-1; i>=0; i--){
+//            answer[i] = st.pop();
+//        }
+//        System.out.println(Arrays.toString(answer));
+
+        // [프로그래머스] 올바른 괄호
+//        Stack<Character> stack = new Stack<>();
+//        for (int i = 0; i < s.length(); i++) {
+//            if (s.charAt(i) == '(') {
+//                stack.push('(');
+//            } else if (s.charAt(i) == ')') {
+//                if (stack.isEmpty()) {
+//                    return false;
+//                }
+//                stack.pop();
+//            }
+//        }
+//        return stack.isEmpty();
 
 
-
+        // Deque
+//        Deque<Integer> d1 = new ArrayDeque<>();
+//        d1.addLast(1);  // 맨 뒤에 add
+//        d1.addLast(2);  // 맨 뒤에 add
+//        System.out.println(d1);
+//        d1.addFirst(3);
+//        System.out.println(d1.pollFirst());     // = .poll()
+//        System.out.println(d1.pollLast());      // = .pop()
+//
+//        // [프로그래머스] 다리를 지나는 트럭
     }
 }
+
 
 
