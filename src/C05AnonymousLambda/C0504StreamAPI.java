@@ -18,7 +18,7 @@ public class C0504StreamAPI {
 //        Arrays.stream(arr).forEach(a-> System.out.println(a));
 
 
-//        // 스트림의 생성
+//        // 1. 스트림의 생성
 //        String[] stArr = {"HTML", "CSS", "JAVA"};
 //        // stream<클래스명> : 제네릭 타입으로 stream 객체가 생성
 //        Stream<String> stream1 = Arrays.stream(stArr);
@@ -40,7 +40,7 @@ public class C0504StreamAPI {
 
 
 
-//        // stream 변환(중개 연산) : filter, map, sorted, distinct, limit
+//        // 2. stream 변환(중개 연산) : filter, map, sorted, distinct, limit
 //        String[] stArr = {"HTML", "CSS", "JAVA"};
 //        // filter : 특정 기준으로 대상을 filtering 하는 것. Stream<String> 반환
 //        // 제네릭의 타입소거 문제 발생
@@ -89,7 +89,7 @@ public class C0504StreamAPI {
 
 
 
-//        // stream 소모 연산 : sum(합계), reduce(누적연산), forEach(출력) 등
+//        // 3. stream 소모 연산 : sum(합계), reduce(누적연산), forEach(출력) 등
 //        int[] intArr = {10, 20, 30, 40};
 //        Arrays.stream(intArr).forEach(a->System.out.println(a));
 //        Arrays.stream(intArr).forEach(System.out::println);
@@ -144,7 +144,7 @@ public class C0504StreamAPI {
 //            System.out.println("값이 없습니다.");
 //        }
 
-        // Optional 객체 생성 방법
+        // Optional 객체 생성 방법 3가지
         Optional<String> opt1 = Optional.empty();
         Optional<String> opt2 = Optional.of("hello");        // null이 못 들어감
         Optional<String> opt3 = Optional.ofNullable(null);   // null이 들어갈 수 있음

@@ -13,14 +13,14 @@ public class C0503ComparableComparator {
 //        String 클래스 외에 java 많은 내장 클래스에서 Comparable 구현
 //        String a = "hello";
 //        String b = "horld";
-//
+
 ////        두 문자열의 각 자리를 순차적으로 비교
 ////        문자열의 비교는 유니코드값의 차이를 반환
 //        System.out.println(a.compareTo(b));
 //
-////        Integer a1 = 10;
-////        Integer a2 = 10;
-////        System.out.println(a1.compareTo(a2));
+//        Integer a1 = 10;
+//        Integer a2 = 10;
+//        System.out.println(a1.compareTo(a2));
 //
 //        List<String> myList = new ArrayList<>();
 //        myList.add("java");
