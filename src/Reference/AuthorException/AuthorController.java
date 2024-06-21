@@ -24,7 +24,6 @@ public class AuthorController {
                 String email = sc.nextLine();
                 System.out.println("비밀번호");
                 String password = sc.nextLine();
-
                 try {
                     authorService.login(email, password);
                 } catch (IllegalArgumentException e){
